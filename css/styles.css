@@ -8,6 +8,15 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  color: #333;
+  color: #080001;
   background: #f2f2f2;
+}
+
+a {
+	text-decoration: none;
+	color: #080001;
+}
+
+li, lo {
+	list-style: none;
 }
