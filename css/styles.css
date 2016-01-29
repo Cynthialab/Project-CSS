@@ -4,12 +4,13 @@
 }
   
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   font-family: 'Dosis', sans-serif;
   color: #080001;
   background: #f2f2f2;
+  max-width: 1024px;
 }
 
 a {
@@ -19,4 +20,45 @@ a {
 
 li, lo {
 	list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.portfolio-images {
+     width: 100%; 
+}
+
+.menu-title {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#profile-pic {
+    width: 70%;
+    padding: 2em;
+}
+
+
+/* Containers Layout */
+
+.full-width-container {
+  margin-bottom: 3em;
+}
+
+.middle-container {
+  background: white; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 10px auto;
 }
