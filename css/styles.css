@@ -1,16 +1,28 @@
-/* Global Layout Set-up */
+/*--------------------------
+ Global Layout Set-up 
+ --------------------------*/
+
 * { 
   box-sizing: border-box;
 }
   
 body {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  font-family: 'Dosis', sans-serif;
-  color: #080001;
-  background: #f2f2f2;
-  max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    color: #080001;
+    background: #f2f2f2;
+    max-width: 1024px;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-header, .menu-title, .sub-header, footer {
+    font-family: 'Patua One', cursive;
 }
 
 a {
@@ -32,7 +44,7 @@ ul {
 
 .menu-title {
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 p {
@@ -41,24 +53,192 @@ p {
 }
 
 #profile-pic {
-    width: 70%;
-    padding: 2em;
+    width: 60%;
+    border-radius: 50%;
+    transition: all .5s;
+    margin: 5% 10%;
 }
 
-
-/* Containers Layout */
+footer {
+    border-top: solid lightgray 2px;
+    display: inline-block;
+    width: 95%;
+    min-height: 30px;
+    padding: 20px 0 40px;
+}
 
 .full-width-container {
-  margin-bottom: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+
+
+/*--------------------------
+ Containers Layout 
+ --------------------------*/
 
 .middle-container {
   background: white; 
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .container {
   width: 90%;
-  margin: 10px auto;
+  margin: 0 auto 60px;
+}
+
+.profile-pic-container {
+    width: 80%;
+    margin: 10% auto;
+    background: #f4e8e8;   
+}
+
+.profile-info-container {
+    padding-bottom: 48px;
+}
+
+.contact-info-li {
+    margin: .5em;
+}
+
+.contact-info-li a {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.nav-link {
+    margin-bottom:6px;
+    padding: 10px 25px;
+    background: white;
+}
+
+.nav-link a {
+    display: block;
+}
+
+header {
+    margin-bottom: 4em;    
+}
+
+#footer-name, #back-to-top {
+    float: left;
+    width: 50%;
+}
+
+#footer-name {
+    text-align: left;
+}
+
+#back-to-top {
+    text-align: right;
+}
+
+#bottom-nav-menu {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .nav-link {
+        display: inline-block;
+        background: none;
+        font-size: 1.1em;
+    }
+
+    .profile-pic-container {
+        display: inline-block;
+        margin: 0 5% 5% 0;
+        width: 35%;
+        float: right;
+    }
+        
+    .profile-info-container {
+        display: inline-block;
+        margin: 0 5% 5% 5%;
+        width: 50%;
+        float: left;
+    }   
+
+    .profile-info {
+        font-size: 1.2em;
+        text-align: left;
+        margin: 0;
+    }
+    
+    .container {
+        float: left;
+        width: 45%;
+        margin: 20px 2.5% 20px 2.5%;
+    }
+    
+    .third-item {
+        clear: left;
+    }    
+     
+    #bottom-nav-menu {
+        display: initial;
+    }   
+    
+    #back-to-top {
+        display: none;
+    }
+    
+    
+    #footer-name {
+        float: left;
+        width: 30%;
+    }
+    
+    #bottom-nav-menu {
+        float: left;
+        width: 70%;
+        text-align: right;
+    }
+    
+    .bottom-nav-link {
+        display: inline-block;
+        background: none;
+        padding-left: 25px;
+    }
+    
+}   
+
+    
+@media screen and (min-width: 1024px) {
+    
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
+    
+   .container {
+        float: left;
+        width: 28.333%;
+        margin: 20px 2.5% 20px 2.5%;
+    }
+    
+    .third-item {
+        clear: none;
+    }   
+    
+    .name {
+        float: left;
+    }
+        
+    .main-nav {
+        float: right;
+        text-align: right;
+        margin-top: 26px;
+    }  
+    
 }

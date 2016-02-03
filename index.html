@@ -5,40 +5,43 @@
     <title>Cynthia LAB's Profile</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,500,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic|Patua+One' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
-<!--- Main Header --->
 
-  <header class="main-header">
-      <div class="header-container">     
-          <h1 class="name"><a href="#">Cynthia LAB</a></h1>
-          <ul class="main-nav">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">CONTACT</a></li>        
-          </ul>
-      </div>
+<!--Main Header -->
+
+  <header class="main-header clearfix"> 
+			<h1 class="name"><a href="#">Cynthia LAB</a></h1>
+			<ul class="main-nav">
+					<li class="nav-link"><a href="#">HOME</a></li>
+					<li class="nav-link"><a href="#portfolio">PORTFOLIO</a></li>
+					<li class="nav-link"><a href="#contact">CONTACT</a></li>        
+			</ul>
   </header>
   
   
   
-<!--- Body and Containers --->
+<!-- Body and Containers -->
 
-  <div class="full-width-container">
-     <img id="profile-pic" src="images/responsive-layout-profile.png" alt="profile-pic-png">
-     <p>Hi! I'm a front-end developer who loves responsive design and CSS. I recently finished a degree in front-end web development at TreeHouse and am excited to put all my skills to use</p>
+  <div class="full-width-container, clearfix">
+      <div class="profile-pic-container">
+      <img id="profile-pic" src="images/responsive-layout-profile.jpg" alt="profile-pic-png">
+      </div>
+      <div class="profile-info-container">
+          <p class="profile-info">Hi! I'm a front-end developer who loves responsive design and CSS. I recently finished a degree in front-end web development at TreeHouse and am excited to put all my skills to use</p>
+      </div>
   </div>
+  
+  
 
+<!-- Start of Portfolio -->
 
-
-<!--- Start of Portfolio --->
-
-  <div class="full-width-container middle-container">
-     <h2 class="menu-title">Portfolio</h2>
+  <div class="full-width-container middle-container clearfix">
+     <h2 class="menu-title" id="portfolio">Portfolio</h2>
      <div class="container">
         <img class="portfolio-images" src="images/portfolio-1.png" alt="website outline">
         <h2 class="sub-header">Marketing Page</h2>
@@ -49,7 +52,7 @@
         <h2 class="sub-header">Search Page</h2>
         <p>This project searches through a specific database to find information that the user is trying to look up."</p>
     </div>
-    <div class="container">
+    <div class="container  third-item">
         <img class="portfolio-images" src="images/portfolio-3.png" alt="Outline of Search Engine">
         <h2 class="sub-header">Travel App</h2>
         <p>This project compares travel times based on different trasnportation methods and tells you the best one.</p>
@@ -73,12 +76,33 @@
   
   
   
-  <!--- Contact --->
+<!-- Contact -->
   
-  <div class="full-width-container">
-      <h2 class="menu-title">Contact</h2>
-      <p>If you're interested in chatting or want more informtion about what I've been working on, I'd love to hear from you!</p>
-  </div>
+    <div class="full-width-container">
+        <h2 class="menu-title" id="contact">Contact</h2>
+        <p>If you're interested in chatting or want more informtion about what I've been working on, I'd love to hear from you!</p>
+            <ul class="contact-into">
+                <li class="contact-info-li">Phone <a href="tel:111-555-1234">+1(111)555-1234</a></li>
+                <li class="contact-info-li">Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></li>    
+            </ul>
+    </div>
     
+    
+    
+<!-- Footer -->
+    
+    <footer>
+        <ul>
+            <li id="footer-name">Cynthia LAB</li>
+            <li id="back-to-top"><a href="#">&uarr; BACK TO TOP </a></li>
+            <li id="bottom-nav-menu">
+                <ul class="bottom-nav-list">
+					<li class="bottom-nav-link"><a href="#">HOME</a></li>
+					<li class="bottom-nav-link"><a href="#portfolio">PORTFOLIO</a></li>
+					<li class="bottom-nav-link"><a href="#contact">CONTACT</a></li>        
+			    </ul>
+            </li>
+        </ul>
+    </footer>
 </body>
         
